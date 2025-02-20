@@ -7,7 +7,7 @@ function Dosomethingcard({ Heading, dosomethingImage }) {
         <img src={ dosomethingImage } alt="Image of buing a home" className='mb-1 md:mb-3 max-w-30 md:max-w-40 mx-auto' />
         <p className="text-2xl mb-3 font-bold">{ Heading }</p>
         <p className="mb-8 md:text-lg text-accent-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, corporis.</p>
-        <Link className='py-3 md:py-4 px-7 rounded-xl bg-primary-200 text-primary font-bold hover:bg-primary hover:text-white'>Find a local agent</Link>
+        <Link to="/" className='py-3 md:py-4 px-7 rounded-xl font-bold text-white hover:text-primary bg-primary hover:bg-primary-200'>Find a local agent</Link>
       </div>
   )
 }

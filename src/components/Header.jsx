@@ -7,12 +7,13 @@ const Header = () => {
     const [topNav, settopNav] = useState(false)
   
     return (
-      <header className='px-2.5 md:px-45 py-4 md:py-5 flex items-center justify-between w-full'>
+      <header className='px-2.5 md:px-20 xl:px-45 py-4 md:py-6 flex items-center justify-between md:justify-center md:gap-30 w-full font-tertiary'>
 
         <nav className='hidden md:block'>
-          <ul className="flex gap-5 md:gap-10 md:font-medium text-2xl md:text-base flex-col md:flex-row pt-23 px-10 md:p-0">
-            <li><Link to="/buy" className='pb-1 hover:border-b-2'>Buy</Link></li>
-            <li><Link to="/sell" className='pb-1 hover:border-b-2'>Sell</Link></li>
+          <ul className="flex gap-10 font-medium flex-row p-0">
+            <li><Link to="/homes" className='pb-1 hover:border-b-2'>Buy Homes</Link></li>
+            <li><Link to="/sell" className='pb-1 hover:border-b-2'>Buy Land</Link></li>
+            <li><Link to="/buy" className='pb-1 hover:border-b-2'>Buy Commercial Property</Link></li>
           </ul>
         </nav>
 
@@ -23,9 +24,12 @@ const Header = () => {
   
         <nav className={topNav ? 'block fixed top-0 right-0 h-full w-full bg-white z-10' : 'hidden md:block'}>
           <ul className="flex md:gap-10 md:font-medium text-lg md:text-base flex-col md:flex-row pt-23 md:p-0">
-            <li className="px-10 border-t-1 md:p-0 md:border-0 border-primary-350"><Link to="/buy" className='w-full block py-3 md:py-0 md:pb-1 md:hover:border-b-2 md:hidden'>Buy</Link></li>
-            <li className="px-10 border-t-1 md:p-0 md:border-0 border-primary-350"><Link to="/sell" className='w-full block py-3 md:py-0 md:pb-1 md:hover:border-b-2 md:hidden'>Sell</Link></li>
-            <li className="px-10 border-y-1 md:p-0 md:border-0 border-primary-350"><a href="mailto:pakodev.info@gmail.com" className='w-full block py-3 md:py-0 md:pb-1 md:hover:border-b-2'>Find an agent</a></li>
+            <li className="px-10 border-t-1 md:p-0 md:border-0 border-primary-350 md:hidden"><Link to="/homes" className='w-full block py-3 md:py-0 md:pb-1 md:hover:border-b-2'>Buy Homes</Link></li>
+            <li className="px-10 border-t-1 md:p-0 md:border-0 border-primary-350 md:hidden"><Link to="/sell" className='w-full block py-3 md:py-0 md:pb-1 md:hover:border-b-2'>Buy Land</Link></li>
+            <li className="px-10 border-t-1 md:p-0 md:border-0 border-primary-350 md:hidden"><Link to="/sell" className='w-full block py-3 md:py-0 md:pb-1 md:hover:border-b-2'>Buy Commercial Property</Link></li>
+            <li className="px-10 border-t-1 md:p-0 md:border-0 border-primary-350"><a href="" className='w-full block md:inline py-3 md:py-0 md:pb-1 md:hover:border-b-2'>Sell Homes</a></li>
+            <li className="px-10 border-t-1 md:p-0 md:border-0 border-primary-350"><a href="" className='w-full block md:inline py-3 md:py-0 md:pb-1 md:hover:border-b-2'>Sell Land</a></li>
+            <li className="px-10 border-y-1 md:p-0 md:border-0 border-primary-350"><a href="" className='w-full block md:inline py-3 md:py-0 md:pb-1 md:hover:border-b-2'>Sell Commercial Property</a></li>
           </ul>
         </nav>
   

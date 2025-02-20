@@ -5,14 +5,14 @@ import './index.css'
 
 
 import Home from "./pages/Home";
-import Portfolio from "./pages/Portfolio";
+import Homes from "./pages/Homes";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
         <Routes>
             <Route index element={<Home />} />
-            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/homes" element={<Homes />} />
         </Routes>
       </BrowserRouter>
     </StrictMode>
