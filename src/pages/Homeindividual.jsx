@@ -30,7 +30,7 @@ const Homeindividual = () => {
 
 
             <div className='my-20 mx-5 md:mx-15'>
-              <Link to='/homes' className='flex items-center justify-center gap-5 py-15 rounded-2xl text-3xl font-medium text-primary bg-primary-300'><span>More houses</span> <svg className='w-5' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path className='fill-primry' d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></Link>
+              <Link to='/homes' className='flex items-center justify-center gap-5 py-5 md:py-15 rounded-2xl text-xl md:text-3xl font-medium text-primary bg-primary-300'><span>More houses</span> <svg className='w-5' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path className='fill-primry' d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></Link>
             </div>
 
             <Footer />
